@@ -1,0 +1,2574 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0410.0924                               -->
+<workbook original-version='18.1' source-build='2026.1.1 (20261.26.0410.0924)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <style-rule element='story-title'>
+      <format attr='font-family' value='Tableau Bold' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource caption='Indigo_Data_Set' inline='true' name='federated.1b0h9n41ht4csy1752xx31b77kwi' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Indigo_Data_Set' name='excel-direct.135w9f002h1uro15unzxe1lu184q'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/VAISHALI/OneDrive/Documents/Personal Project/Indigo-Airline-Dashboard/Proceed_Data/Indigo_Data_Set.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.135w9f002h1uro15unzxe1lu184q' name='customer_booking_data_for_airli' table='[customer_booking_data_for_airli$]' type='table'>
+          <columns gridOrigin='A1:U10001:no:A1:U10001:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Flight number' ordinal='0' />
+            <column datatype='integer' name='num_passengers' ordinal='1' />
+            <column datatype='string' name='sales_channel' ordinal='2' />
+            <column datatype='string' name='trip_type' ordinal='3' />
+            <column datatype='integer' name='purchase_lead' ordinal='4' />
+            <column datatype='integer' name='length_of_stay' ordinal='5' />
+            <column datatype='integer' name='flight_hour' ordinal='6' />
+            <column datatype='string' name='flight_day' ordinal='7' />
+            <column datatype='string' name='route' ordinal='8' />
+            <column datatype='string' name='booking_origin' ordinal='9' />
+            <column datatype='integer' name='wants_extra_baggage' ordinal='10' />
+            <column datatype='integer' name='wants_preferred_seat' ordinal='11' />
+            <column datatype='integer' name='wants_in_flight_meals' ordinal='12' />
+            <column datatype='real' name='flight_duration_planned' ordinal='13' />
+            <column datatype='integer' name='booking_complete' ordinal='14' />
+            <column datatype='real' name='flight_duration_actual' ordinal='15' />
+            <column datatype='string' name='Seat_class' ordinal='16' />
+            <column datatype='integer' name='booking_amount' ordinal='17' />
+            <column datatype='string' name='booking_status' ordinal='18' />
+            <column datatype='real' name='duration_delay' ordinal='19' />
+            <column datatype='integer' name='total_addon' ordinal='20' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[customer_booking_data_for_airli]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:U10001:no:A1:U10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Flight number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Flight number]</local-name>
+            <parent-name>[customer_booking_data_for_airli]</parent-name>
+            <remote-alias>Flight number</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_passengers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_passengers]</local-name>
+            <parent-name>[customer_booking_data_for_airli]</parent-name>
+            <remote-alias>num_passengers</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sales_channel</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[sales_channel]</local-name>
+            <parent-name>[customer_booking_data_for_airli]</parent-name>
+            <remote-alias>sales_channel</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trip_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[trip_type]</local-name>
+            <parent-name>[customer_booking_data_for_airli]</parent-name>
+            <remote-alias>trip_type</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>purchase_lead</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[purchase_lead]</local-name>
+            <parent-name>[customer_booking_data_for_airli]</parent-name>
+            <remote-alias>purchase_lead</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>length_of_stay</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[length_of_stay]</local-name>
+            <parent-name>[customer_booking_data_for_airli]</parent-name>
+            <remote-alias>length_of_stay</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flight_hour</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[flight_hour]</local-name>
+            <parent-name>[customer_booking_data_for_airli]</parent-name>
+            <remote-alias>flight_hour</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flight_day</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[flight_day]</local-name>
+            <parent-name>[customer_booking_data_for_airli]</parent-name>
+            <remote-alias>flight_day</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>route</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[route]</local-name>
+            <parent-name>[customer_booking_data_for_airli]</parent-name>
+            <remote-alias>route</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>booking_origin</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[booking_origin]</local-name>
+            <parent-name>[customer_booking_data_for_airli]</parent-name>
+            <remote-alias>booking_origin</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wants_extra_baggage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wants_extra_baggage]</local-name>
+            <parent-name>[customer_booking_data_for_airli]</parent-name>
+            <remote-alias>wants_extra_baggage</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wants_preferred_seat</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wants_preferred_seat]</local-name>
+            <parent-name>[customer_booking_data_for_airli]</parent-name>
+            <remote-alias>wants_preferred_seat</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wants_in_flight_meals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wants_in_flight_meals]</local-name>
+            <parent-name>[customer_booking_data_for_airli]</parent-name>
+            <remote-alias>wants_in_flight_meals</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flight_duration_planned</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[flight_duration_planned]</local-name>
+            <parent-name>[customer_booking_data_for_airli]</parent-name>
+            <remote-alias>flight_duration_planned</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>booking_complete</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[booking_complete]</local-name>
+            <parent-name>[customer_booking_data_for_airli]</parent-name>
+            <remote-alias>booking_complete</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flight_duration_actual</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[flight_duration_actual]</local-name>
+            <parent-name>[customer_booking_data_for_airli]</parent-name>
+            <remote-alias>flight_duration_actual</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Seat_class</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Seat_class]</local-name>
+            <parent-name>[customer_booking_data_for_airli]</parent-name>
+            <remote-alias>Seat_class</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>booking_amount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[booking_amount]</local-name>
+            <parent-name>[customer_booking_data_for_airli]</parent-name>
+            <remote-alias>booking_amount</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>booking_status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[booking_status]</local-name>
+            <parent-name>[customer_booking_data_for_airli]</parent-name>
+            <remote-alias>booking_status</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>duration_delay</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[duration_delay]</local-name>
+            <parent-name>[customer_booking_data_for_airli]</parent-name>
+            <remote-alias>duration_delay</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_addon</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_addon]</local-name>
+            <parent-name>[customer_booking_data_for_airli]</parent-name>
+            <remote-alias>total_addon</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Total Revenue (Completed)' datatype='integer' name='[Calculation_0360096825237505]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [booking_complete]= 1 THEN [booking_amount] ELSE 0 END' />
+      </column>
+      <column caption='Completion Rate' datatype='real' name='[Calculation_0360096827150339]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([booking_complete])/ COUNT([booking_complete])' />
+      </column>
+      <column caption='Total Completed Booking' datatype='integer' name='[Calculation_0360096827764740]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [booking_complete] = 1 THEN 1 END' />
+      </column>
+      <column caption='Number of Records' datatype='integer' name='[Calculation_0360096835674117]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([Flight number])' />
+      </column>
+      <column caption='Is Complete' datatype='boolean' name='[Calculation_0360096836530182]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[booking_complete] = 1' />
+      </column>
+      <column datatype='integer' name='[Flight number]' role='dimension' type='ordinal' />
+      <column caption='Seat class' datatype='string' name='[Seat_class]' role='dimension' type='nominal' />
+      <column caption='customer_booking_data_for_airli' datatype='table' name='[__tableau_internal_object_id__].[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]' role='measure' type='quantitative' />
+      <column caption='Booking Amount' datatype='integer' name='[booking_amount]' role='measure' type='quantitative' />
+      <column caption='Booking Complete' datatype='integer' name='[booking_complete]' role='measure' type='quantitative' />
+      <column caption='Booking Origin' datatype='string' name='[booking_origin]' role='dimension' type='nominal' />
+      <column caption='Booking Status' datatype='string' name='[booking_status]' role='dimension' type='nominal' />
+      <column caption='Duration Delay' datatype='real' name='[duration_delay]' role='measure' type='quantitative' />
+      <column caption='Flight Day' datatype='string' name='[flight_day]' role='dimension' type='nominal' />
+      <column caption='Flight Duration Actual' datatype='real' name='[flight_duration_actual]' role='measure' type='quantitative' />
+      <column caption='Flight Duration Planned' datatype='real' name='[flight_duration_planned]' role='measure' type='quantitative' />
+      <column caption='Flight Hour' datatype='integer' name='[flight_hour]' role='measure' type='quantitative' />
+      <column caption='Length Of Stay' datatype='integer' name='[length_of_stay]' role='measure' type='quantitative' />
+      <column caption='Num Passengers' datatype='integer' name='[num_passengers]' role='measure' type='quantitative' />
+      <column caption='Purchase Lead' datatype='integer' name='[purchase_lead]' role='measure' type='quantitative' />
+      <column caption='Route' datatype='string' name='[route]' role='dimension' type='nominal' />
+      <column caption='Sales Channel' datatype='string' name='[sales_channel]' role='dimension' type='nominal' />
+      <column caption='Total Addon' datatype='integer' name='[total_addon]' role='measure' type='quantitative' />
+      <column caption='Trip Type' datatype='string' name='[trip_type]' role='dimension' type='nominal' />
+      <column caption='Wants Extra Baggage' datatype='integer' name='[wants_extra_baggage]' role='measure' type='quantitative' />
+      <column caption='Wants In Flight Meals' datatype='integer' name='[wants_in_flight_meals]' role='measure' type='quantitative' />
+      <column caption='Wants Preferred Seat' datatype='integer' name='[wants_preferred_seat]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_0360096825237505]' derivation='Avg' name='[avg:Calculation_0360096825237505:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[booking_amount]' derivation='Avg' name='[avg:booking_amount:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[sales_channel]' derivation='None' name='[none:sales_channel:nk]' pivot='key' type='nominal' />
+      <column-instance column='[total_addon]' derivation='None' name='[none:total_addon:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Calculation_0360096825237505]' derivation='Sum' name='[pcto:sum:Calculation_0360096825237505:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Calculation_0360096825237505]' derivation='Sum' name='[sum:Calculation_0360096825237505:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[booking_amount]' derivation='Sum' name='[sum:booking_amount:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[booking_complete]' derivation='Sum' name='[sum:booking_complete:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_0360096835674117]' derivation='User' name='[usr:Calculation_0360096835674117:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Flight Day)' hidden='true' name='[Action (Flight Day)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[flight_day]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Route)' hidden='true' name='[Action (Route)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[route]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Seat class,Total Addon)' hidden='true' name='[Action (Seat class,Total Addon)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Seat_class]' />
+          <groupfilter function='level-members' level='[none:total_addon:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Total Addon)' hidden='true' name='[Action (Total Addon)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:total_addon:ok]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/VAISHALI/AppData/Local/Temp/TableauTemp/#TableauTemp_0geb53s0ebu121139qv6u0n4uvo0.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/29/2026 05:49:04 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Flight number</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Flight number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Flight number</remote-alias>
+              <ordinal>0</ordinal>
+              <family>customer_booking_data_for_airli</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>num_passengers</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[num_passengers]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>num_passengers</remote-alias>
+              <ordinal>1</ordinal>
+              <family>customer_booking_data_for_airli</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sales_channel</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sales_channel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sales_channel</remote-alias>
+              <ordinal>2</ordinal>
+              <family>customer_booking_data_for_airli</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trip_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[trip_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trip_type</remote-alias>
+              <ordinal>3</ordinal>
+              <family>customer_booking_data_for_airli</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>purchase_lead</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[purchase_lead]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>purchase_lead</remote-alias>
+              <ordinal>4</ordinal>
+              <family>customer_booking_data_for_airli</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>817</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>length_of_stay</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[length_of_stay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>length_of_stay</remote-alias>
+              <ordinal>5</ordinal>
+              <family>customer_booking_data_for_airli</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>278</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>flight_hour</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[flight_hour]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>flight_hour</remote-alias>
+              <ordinal>6</ordinal>
+              <family>customer_booking_data_for_airli</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>flight_day</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[flight_day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>flight_day</remote-alias>
+              <ordinal>7</ordinal>
+              <family>customer_booking_data_for_airli</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>route</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[route]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>route</remote-alias>
+              <ordinal>8</ordinal>
+              <family>customer_booking_data_for_airli</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1215</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>booking_origin</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[booking_origin]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>booking_origin</remote-alias>
+              <ordinal>9</ordinal>
+              <family>customer_booking_data_for_airli</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>97</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wants_extra_baggage</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[wants_extra_baggage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wants_extra_baggage</remote-alias>
+              <ordinal>10</ordinal>
+              <family>customer_booking_data_for_airli</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wants_preferred_seat</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[wants_preferred_seat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wants_preferred_seat</remote-alias>
+              <ordinal>11</ordinal>
+              <family>customer_booking_data_for_airli</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wants_in_flight_meals</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[wants_in_flight_meals]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wants_in_flight_meals</remote-alias>
+              <ordinal>12</ordinal>
+              <family>customer_booking_data_for_airli</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>flight_duration_planned</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[flight_duration_planned]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>flight_duration_planned</remote-alias>
+              <ordinal>13</ordinal>
+              <family>customer_booking_data_for_airli</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>booking_complete</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[booking_complete]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>booking_complete</remote-alias>
+              <ordinal>14</ordinal>
+              <family>customer_booking_data_for_airli</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>flight_duration_actual</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[flight_duration_actual]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>flight_duration_actual</remote-alias>
+              <ordinal>15</ordinal>
+              <family>customer_booking_data_for_airli</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Seat_class</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Seat_class]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Seat_class</remote-alias>
+              <ordinal>16</ordinal>
+              <family>customer_booking_data_for_airli</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>booking_amount</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[booking_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>booking_amount</remote-alias>
+              <ordinal>17</ordinal>
+              <family>customer_booking_data_for_airli</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11085</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>booking_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[booking_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>booking_status</remote-alias>
+              <ordinal>18</ordinal>
+              <family>customer_booking_data_for_airli</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>duration_delay</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[duration_delay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>duration_delay</remote-alias>
+              <ordinal>19</ordinal>
+              <family>customer_booking_data_for_airli</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_addon</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_addon]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_addon</remote-alias>
+              <ordinal>20</ordinal>
+              <family>customer_booking_data_for_airli</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:booking_amount:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:booking_amount:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:booking_complete:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1b0h9n41ht4csy1752xx31b77kwi].[usr:Calculation_0360096835674117:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:Calculation_0360096825237505:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1b0h9n41ht4csy1752xx31b77kwi].[pcto:sum:Calculation_0360096825237505:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:Calculation_0360096825237505:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:sales_channel:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;{no data}&quot;</bucket>
+            </map>
+            <map to='#6a9bc3'>
+              <bucket>&quot;Internet&quot;</bucket>
+            </map>
+            <map to='#afd6ed'>
+              <bucket>&quot;Mobile&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='customer_booking_data_for_airli' id='customer!booking!data!for!airli_66CF512622EB4183B393B3AEBF72A572'>
+            <properties context=''>
+              <relation connection='excel-direct.135w9f002h1uro15unzxe1lu184q' name='customer_booking_data_for_airli' table='[customer_booking_data_for_airli$]' type='table'>
+                <columns gridOrigin='A1:U10001:no:A1:U10001:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Flight number' ordinal='0' />
+                  <column datatype='integer' name='num_passengers' ordinal='1' />
+                  <column datatype='string' name='sales_channel' ordinal='2' />
+                  <column datatype='string' name='trip_type' ordinal='3' />
+                  <column datatype='integer' name='purchase_lead' ordinal='4' />
+                  <column datatype='integer' name='length_of_stay' ordinal='5' />
+                  <column datatype='integer' name='flight_hour' ordinal='6' />
+                  <column datatype='string' name='flight_day' ordinal='7' />
+                  <column datatype='string' name='route' ordinal='8' />
+                  <column datatype='string' name='booking_origin' ordinal='9' />
+                  <column datatype='integer' name='wants_extra_baggage' ordinal='10' />
+                  <column datatype='integer' name='wants_preferred_seat' ordinal='11' />
+                  <column datatype='integer' name='wants_in_flight_meals' ordinal='12' />
+                  <column datatype='real' name='flight_duration_planned' ordinal='13' />
+                  <column datatype='integer' name='booking_complete' ordinal='14' />
+                  <column datatype='real' name='flight_duration_actual' ordinal='15' />
+                  <column datatype='string' name='Seat_class' ordinal='16' />
+                  <column datatype='integer' name='booking_amount' ordinal='17' />
+                  <column datatype='string' name='booking_status' ordinal='18' />
+                  <column datatype='real' name='duration_delay' ordinal='19' />
+                  <column datatype='integer' name='total_addon' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_B228D86BB3D24B05AD4EB9C101F5D020]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Booking by Flight days' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Booking by Flight days' />
+      </command>
+    </action>
+    <action caption='Filter 1 (generated)' name='[Action2_6C68B4D8349A4B668C9508E11BD5D5E3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Revenue by Sales Channel' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action3_0C85E22084474E918CB09CCDB5E005FF]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Booking by Flight days' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action4_C88C64A28AD34F918878334B97DA9618]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='KPI Sheet' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action5_F04600565C104E88A11AB28116E84587]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Revenue by Seat Class' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 5 (generated)' name='[Action6_9E39A223B1904ED8B8852708AC0D1E56]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Add-on Heatmap' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 6 (generated)' name='[Action7_30F8BE9900D0433D8295D5F3447558A4]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Top 10 Route by Revenue' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 7 (generated)' name='[Action8_B6B5CBBE32F447D8B09DD5BFAEFD7E61]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Add-on impact' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Add-on Heatmap'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Indigo_Data_Set' name='federated.1b0h9n41ht4csy1752xx31b77kwi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b0h9n41ht4csy1752xx31b77kwi'>
+            <column caption='Total Revenue (Completed)' datatype='integer' name='[Calculation_0360096825237505]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [booking_complete]= 1 THEN [booking_amount] ELSE 0 END' />
+            </column>
+            <column caption='Is Complete' datatype='boolean' name='[Calculation_0360096836530182]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[booking_complete] = 1' />
+            </column>
+            <column caption='Seat class' datatype='string' name='[Seat_class]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0360096825237505]' derivation='Avg' name='[avg:Calculation_0360096825237505:qk]' pivot='key' type='quantitative' />
+            <column caption='Booking Amount' datatype='integer' name='[booking_amount]' role='measure' type='quantitative' />
+            <column caption='Booking Complete' datatype='integer' name='[booking_complete]' role='measure' type='quantitative' />
+            <column caption='Flight Day' datatype='string' name='[flight_day]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0360096836530182]' derivation='None' name='[none:Calculation_0360096836530182:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Seat_class]' derivation='None' name='[none:Seat_class:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_addon]' derivation='None' name='[none:total_addon:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[total_addon]' derivation='None' name='[none:total_addon:qk]' pivot='key' type='quantitative' />
+            <column caption='Route' datatype='string' name='[route]' role='dimension' type='nominal' />
+            <column caption='Total Addon' datatype='integer' name='[total_addon]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Flight Day)]'>
+            <groupfilter function='level-members' level='[flight_day]' user:ui-action-filter='[Action3_0C85E22084474E918CB09CCDB5E005FF]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Route)]'>
+            <groupfilter function='level-members' level='[route]' user:ui-action-filter='[Action7_30F8BE9900D0433D8295D5F3447558A4]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Total Addon)]'>
+            <groupfilter function='level-members' level='[none:total_addon:ok]' user:ui-action-filter='[Action8_B6B5CBBE32F447D8B09DD5BFAEFD7E61]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:Calculation_0360096825237505:qk]' included-values='in-range' />
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:Calculation_0360096836530182:nk]'>
+            <groupfilter function='member' level='[none:Calculation_0360096836530182:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:Calculation_0360096836530182:nk]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:Calculation_0360096825237505:qk]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Route)]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Flight Day)]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Total Addon)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:Calculation_0360096825237505:qk]' value='c&quot;₹ &quot;#,##0;&quot;₹ &quot;-#,##0' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:Calculation_0360096825237505:qk]' value='Avg. Total Revenue (Completed)'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontsize='10'>Avg. Total Revenue (Completed)</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:Calculation_0360096825237505:qk]' />
+              <text column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:Calculation_0360096825237505:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:Seat_class:nk]</rows>
+        <cols>[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:total_addon:qk]</cols>
+      </table>
+      <simple-id uuid='{F788FB2D-608F-47F7-AC96-B5A09DB6E4FF}' />
+    </worksheet>
+    <worksheet name='Add-on impact'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Indigo_Data_Set' name='federated.1b0h9n41ht4csy1752xx31b77kwi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b0h9n41ht4csy1752xx31b77kwi'>
+            <column caption='Is Complete' datatype='boolean' name='[Calculation_0360096836530182]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[booking_complete] = 1' />
+            </column>
+            <column caption='Seat class' datatype='string' name='[Seat_class]' role='dimension' type='nominal' />
+            <column-instance column='[booking_amount]' derivation='Avg' name='[avg:booking_amount:qk]' pivot='key' type='quantitative' />
+            <column caption='Booking Amount' datatype='integer' name='[booking_amount]' role='measure' type='quantitative' />
+            <column caption='Booking Complete' datatype='integer' name='[booking_complete]' role='measure' type='quantitative' />
+            <column caption='Flight Day' datatype='string' name='[flight_day]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0360096836530182]' derivation='None' name='[none:Calculation_0360096836530182:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_addon]' derivation='None' name='[none:total_addon:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[total_addon]' derivation='None' name='[none:total_addon:qk]' pivot='key' type='quantitative' />
+            <column caption='Route' datatype='string' name='[route]' role='dimension' type='nominal' />
+            <column-instance column='[total_addon]' derivation='Sum' name='[sum:total_addon:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Addon' datatype='integer' name='[total_addon]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Flight Day)]'>
+            <groupfilter function='level-members' level='[flight_day]' user:ui-action-filter='[Action3_0C85E22084474E918CB09CCDB5E005FF]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Route)]'>
+            <groupfilter function='level-members' level='[route]' user:ui-action-filter='[Action7_30F8BE9900D0433D8295D5F3447558A4]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Seat class,Total Addon)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action6_9E39A223B1904ED8B8852708AC0D1E56]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Seat_class]' />
+              <groupfilter function='level-members' level='[none:total_addon:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:Calculation_0360096836530182:nk]'>
+            <groupfilter function='member' level='[none:Calculation_0360096836530182:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:Calculation_0360096836530182:nk]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Route)]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Seat class,Total Addon)]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Flight Day)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:booking_amount:qk]' value='c&quot;₹ &quot;#,##0;&quot;₹ &quot;-#,##0' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:total_addon:qk]' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:total_addon:qk]' />
+              <text column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:booking_amount:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:booking_amount:qk]</rows>
+        <cols>[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:total_addon:qk]</cols>
+      </table>
+      <simple-id uuid='{E7C425BE-3503-40C3-88F6-F07D949497CF}' />
+    </worksheet>
+    <worksheet name='Booking by Flight days'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Indigo_Data_Set' name='federated.1b0h9n41ht4csy1752xx31b77kwi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b0h9n41ht4csy1752xx31b77kwi'>
+            <column caption='Total Revenue (Completed)' datatype='integer' name='[Calculation_0360096825237505]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [booking_complete]= 1 THEN [booking_amount] ELSE 0 END' />
+            </column>
+            <column caption='Is Complete' datatype='boolean' name='[Calculation_0360096836530182]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[booking_complete] = 1' />
+            </column>
+            <column caption='Seat class' datatype='string' name='[Seat_class]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0360096825237505]' derivation='Avg' name='[avg:Calculation_0360096825237505:qk]' pivot='key' type='quantitative' />
+            <column caption='Booking Amount' datatype='integer' name='[booking_amount]' role='measure' type='quantitative' />
+            <column caption='Booking Complete' datatype='integer' name='[booking_complete]' role='measure' type='quantitative' />
+            <column caption='Flight Day' datatype='string' name='[flight_day]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0360096836530182]' derivation='None' name='[none:Calculation_0360096836530182:nk]' pivot='key' type='nominal' />
+            <column-instance column='[flight_day]' derivation='None' name='[none:flight_day:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_addon]' derivation='None' name='[none:total_addon:ok]' pivot='key' type='ordinal' />
+            <column caption='Route' datatype='string' name='[route]' role='dimension' type='nominal' />
+            <column-instance column='[booking_complete]' derivation='Sum' name='[sum:booking_complete:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Addon' datatype='integer' name='[total_addon]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Route)]'>
+            <groupfilter function='level-members' level='[route]' user:ui-action-filter='[Action7_30F8BE9900D0433D8295D5F3447558A4]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Seat class,Total Addon)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action6_9E39A223B1904ED8B8852708AC0D1E56]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Seat_class]' />
+              <groupfilter function='level-members' level='[none:total_addon:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Total Addon)]'>
+            <groupfilter function='level-members' level='[none:total_addon:ok]' user:ui-action-filter='[Action8_B6B5CBBE32F447D8B09DD5BFAEFD7E61]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:Calculation_0360096836530182:nk]'>
+            <groupfilter function='member' level='[none:Calculation_0360096836530182:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:flight_day:nk]'>
+            <groupfilter function='level-members' level='[none:flight_day:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:flight_day:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Mon&quot;</bucket>
+              <bucket>&quot;Tue&quot;</bucket>
+              <bucket>&quot;Wed&quot;</bucket>
+              <bucket>&quot;Thu&quot;</bucket>
+              <bucket>&quot;Fri&quot;</bucket>
+              <bucket>&quot;Sat&quot;</bucket>
+              <bucket>&quot;Sun&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:Calculation_0360096836530182:nk]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:flight_day:nk]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Route)]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Seat class,Total Addon)]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Total Addon)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:Calculation_0360096825237505:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:Calculation_0360096825237505:qk]' value='c&quot;₹ &quot;#,##0;&quot;₹ &quot;-#,##0' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:flight_day:nk]' value='Flight Day'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontsize='10'>Flight Day</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:booking_complete:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[:Measure Names]' />
+              <text column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:booking_complete:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:Calculation_0360096825237505:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[:Measure Names]' />
+              <text column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:Calculation_0360096825237505:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:booking_complete:qk] + [federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:Calculation_0360096825237505:qk])</rows>
+        <cols>[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:flight_day:nk]</cols>
+      </table>
+      <simple-id uuid='{13317CBA-DD9E-44C9-BAEC-E59A23A76E85}' />
+    </worksheet>
+    <worksheet name='KPI Sheet'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>KPI</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Indigo_Data_Set' name='federated.1b0h9n41ht4csy1752xx31b77kwi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b0h9n41ht4csy1752xx31b77kwi'>
+            <column caption='Total Revenue (Completed)' datatype='integer' name='[Calculation_0360096825237505]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [booking_complete]= 1 THEN [booking_amount] ELSE 0 END' />
+            </column>
+            <column caption='Completion Rate' datatype='real' name='[Calculation_0360096827150339]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([booking_complete])/ COUNT([booking_complete])' />
+            </column>
+            <column caption='Total Completed Booking' datatype='integer' name='[Calculation_0360096827764740]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [booking_complete] = 1 THEN 1 END' />
+            </column>
+            <column caption='Seat class' datatype='string' name='[Seat_class]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0360096825237505]' derivation='Avg' name='[avg:Calculation_0360096825237505:qk]' pivot='key' type='quantitative' />
+            <column caption='Booking Amount' datatype='integer' name='[booking_amount]' role='measure' type='quantitative' />
+            <column caption='Booking Complete' datatype='integer' name='[booking_complete]' role='measure' type='quantitative' />
+            <column caption='Flight Day' datatype='string' name='[flight_day]' role='dimension' type='nominal' />
+            <column-instance column='[total_addon]' derivation='None' name='[none:total_addon:ok]' pivot='key' type='ordinal' />
+            <column caption='Route' datatype='string' name='[route]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0360096825237505]' derivation='Sum' name='[sum:Calculation_0360096825237505:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0360096827764740]' derivation='Sum' name='[sum:Calculation_0360096827764740:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_addon]' derivation='Sum' name='[sum:total_addon:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Addon' datatype='integer' name='[total_addon]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0360096827150339]' derivation='User' name='[usr:Calculation_0360096827150339:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:Calculation_0360096827764740:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:Calculation_0360096825237505:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:total_addon:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1b0h9n41ht4csy1752xx31b77kwi].[usr:Calculation_0360096827150339:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:Calculation_0360096827764740:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:Calculation_0360096825237505:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:Calculation_0360096825237505:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:total_addon:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1b0h9n41ht4csy1752xx31b77kwi].[usr:Calculation_0360096827150339:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Flight Day)]'>
+            <groupfilter function='level-members' level='[flight_day]' user:ui-action-filter='[Action3_0C85E22084474E918CB09CCDB5E005FF]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Route)]'>
+            <groupfilter function='level-members' level='[route]' user:ui-action-filter='[Action7_30F8BE9900D0433D8295D5F3447558A4]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Seat class,Total Addon)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action6_9E39A223B1904ED8B8852708AC0D1E56]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Seat_class]' />
+              <groupfilter function='level-members' level='[none:total_addon:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Total Addon)]'>
+            <groupfilter function='level-members' level='[none:total_addon:ok]' user:ui-action-filter='[Action8_B6B5CBBE32F447D8B09DD5BFAEFD7E61]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:Calculation_0360096825237505:qk]' included-values='in-range' />
+          <slices>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[:Measure Names]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:Calculation_0360096825237505:qk]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Route)]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Seat class,Total Addon)]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Flight Day)]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Total Addon)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:Calculation_0360096825237505:qk]' value='c&quot;₹ &quot;#,##0;&quot;₹ &quot;-#,##0' />
+            <format attr='text-format' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:Calculation_0360096825237505:qk]' value='c&quot;₹ &quot;#,##0;&quot;₹ &quot;-#,##0' />
+            <format attr='text-format' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[usr:Calculation_0360096827150339:qk]' value='p0.0%' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='10' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b0h9n41ht4csy1752xx31b77kwi].[:Measure Names]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{1C4747B3-B360-4131-B5C5-B1468BA42988}' />
+    </worksheet>
+    <worksheet name='Puchase lead by seat class'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Indigo_Data_Set' name='federated.1b0h9n41ht4csy1752xx31b77kwi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b0h9n41ht4csy1752xx31b77kwi'>
+            <column caption='Seat class' datatype='string' name='[Seat_class]' role='dimension' type='nominal' />
+            <column-instance column='[purchase_lead]' derivation='Avg' name='[avg:purchase_lead:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Seat_class]' derivation='None' name='[none:Seat_class:nk]' pivot='key' type='nominal' />
+            <column caption='Purchase Lead' datatype='integer' name='[purchase_lead]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:purchase_lead:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:purchase_lead:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:purchase_lead:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:purchase_lead:qk]</rows>
+        <cols>[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:Seat_class:nk]</cols>
+      </table>
+      <simple-id uuid='{31559563-57EF-443F-B6AC-F81A9EA65018}' />
+    </worksheet>
+    <worksheet name='Revenue by Sales Channel'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Indigo_Data_Set' name='federated.1b0h9n41ht4csy1752xx31b77kwi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b0h9n41ht4csy1752xx31b77kwi'>
+            <column caption='Total Revenue (Completed)' datatype='integer' name='[Calculation_0360096825237505]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [booking_complete]= 1 THEN [booking_amount] ELSE 0 END' />
+            </column>
+            <column caption='Seat class' datatype='string' name='[Seat_class]' role='dimension' type='nominal' />
+            <column caption='Booking Amount' datatype='integer' name='[booking_amount]' role='measure' type='quantitative' />
+            <column caption='Booking Complete' datatype='integer' name='[booking_complete]' role='measure' type='quantitative' />
+            <column caption='Flight Day' datatype='string' name='[flight_day]' role='dimension' type='nominal' />
+            <column-instance column='[sales_channel]' derivation='None' name='[none:sales_channel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_addon]' derivation='None' name='[none:total_addon:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_0360096825237505]' derivation='Sum' name='[pcto:sum:Calculation_0360096825237505:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Route' datatype='string' name='[route]' role='dimension' type='nominal' />
+            <column caption='Sales Channel' datatype='string' name='[sales_channel]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0360096825237505]' derivation='Sum' name='[sum:Calculation_0360096825237505:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Addon' datatype='integer' name='[total_addon]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Flight Day)]'>
+            <groupfilter function='level-members' level='[flight_day]' user:ui-action-filter='[Action3_0C85E22084474E918CB09CCDB5E005FF]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Route)]'>
+            <groupfilter function='level-members' level='[route]' user:ui-action-filter='[Action7_30F8BE9900D0433D8295D5F3447558A4]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Seat class,Total Addon)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action6_9E39A223B1904ED8B8852708AC0D1E56]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Seat_class]' />
+              <groupfilter function='level-members' level='[none:total_addon:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Total Addon)]'>
+            <groupfilter function='level-members' level='[none:total_addon:ok]' user:ui-action-filter='[Action8_B6B5CBBE32F447D8B09DD5BFAEFD7E61]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:sales_channel:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:sales_channel:nk]' />
+              <groupfilter function='member' level='[none:sales_channel:nk]' member='&quot;{no data}&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[:Measure Names]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:sales_channel:nk]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Route)]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Seat class,Total Addon)]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Flight Day)]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Total Addon)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[pcto:sum:Calculation_0360096825237505:qk]' value='p0.0%' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:sales_channel:nk]' value='Sales Channel'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontsize='10'>Sales Channel</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:sales_channel:nk]' />
+              <wedge-size column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:Calculation_0360096825237505:qk]' />
+              <text column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:sales_channel:nk]' />
+              <text column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[pcto:sum:Calculation_0360096825237505:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{301C87C5-C367-4107-A532-6C0948FD6040}' />
+    </worksheet>
+    <worksheet name='Revenue by Seat Class'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Indigo_Data_Set' name='federated.1b0h9n41ht4csy1752xx31b77kwi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b0h9n41ht4csy1752xx31b77kwi'>
+            <column caption='Total Revenue (Completed)' datatype='integer' name='[Calculation_0360096825237505]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [booking_complete]= 1 THEN [booking_amount] ELSE 0 END' />
+            </column>
+            <column caption='Seat class' datatype='string' name='[Seat_class]' role='dimension' type='nominal' />
+            <column-instance column='[booking_amount]' derivation='Avg' name='[avg:booking_amount:qk]' pivot='key' type='quantitative' />
+            <column caption='Booking Amount' datatype='integer' name='[booking_amount]' role='measure' type='quantitative' />
+            <column caption='Booking Complete' datatype='integer' name='[booking_complete]' role='measure' type='quantitative' />
+            <column caption='Flight Day' datatype='string' name='[flight_day]' role='dimension' type='nominal' />
+            <column-instance column='[Seat_class]' derivation='None' name='[none:Seat_class:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_addon]' derivation='None' name='[none:total_addon:ok]' pivot='key' type='ordinal' />
+            <column caption='Route' datatype='string' name='[route]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0360096825237505]' derivation='Sum' name='[sum:Calculation_0360096825237505:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Addon' datatype='integer' name='[total_addon]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:booking_amount:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:Calculation_0360096825237505:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Flight Day)]'>
+            <groupfilter function='level-members' level='[flight_day]' user:ui-action-filter='[Action3_0C85E22084474E918CB09CCDB5E005FF]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Route)]'>
+            <groupfilter function='level-members' level='[route]' user:ui-action-filter='[Action7_30F8BE9900D0433D8295D5F3447558A4]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Seat class,Total Addon)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action6_9E39A223B1904ED8B8852708AC0D1E56]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Seat_class]' />
+              <groupfilter function='level-members' level='[none:total_addon:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Total Addon)]'>
+            <groupfilter function='level-members' level='[none:total_addon:ok]' user:ui-action-filter='[Action8_B6B5CBBE32F447D8B09DD5BFAEFD7E61]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:Seat_class:nk]'>
+            <groupfilter function='level-members' level='[none:Seat_class:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:Seat_class:nk]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Route)]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Seat class,Total Addon)]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Flight Day)]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Total Addon)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:booking_amount:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:Calculation_0360096825237505:qk]' value='c&quot;₹ &quot;#,##0;&quot;₹ &quot;-#,##0' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:Calculation_0360096825237505:qk]' value='c&quot;₹ &quot;#,##0,,M;&quot;₹ &quot;-#,##0,,M' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:Seat_class:nk]' value='Seat class'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontsize='10'>Seat class</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:Calculation_0360096825237505:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <text column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:Calculation_0360096825237505:qk]' />
+              <color column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:booking_amount:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:Calculation_0360096825237505:qk] + [federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:booking_amount:qk])</rows>
+        <cols>[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:Seat_class:nk]</cols>
+      </table>
+      <simple-id uuid='{BC8E65C6-DCC6-40D6-AE1E-6947732CAF12}' />
+    </worksheet>
+    <worksheet name='Sales Channel Behaviour'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Indigo_Data_Set' name='federated.1b0h9n41ht4csy1752xx31b77kwi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b0h9n41ht4csy1752xx31b77kwi'>
+            <column caption='Number of Records' datatype='integer' name='[Calculation_0360096835674117]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Flight number])' />
+            </column>
+            <column caption='Is Complete' datatype='boolean' name='[Calculation_0360096836530182]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[booking_complete] = 1' />
+            </column>
+            <column datatype='integer' name='[Flight number]' role='dimension' type='ordinal' />
+            <column-instance column='[booking_amount]' derivation='Avg' name='[avg:booking_amount:qk]' pivot='key' type='quantitative' />
+            <column caption='Booking Amount' datatype='integer' name='[booking_amount]' role='measure' type='quantitative' />
+            <column caption='Booking Complete' datatype='integer' name='[booking_complete]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0360096836530182]' derivation='None' name='[none:Calculation_0360096836530182:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sales_channel]' derivation='None' name='[none:sales_channel:nk]' pivot='key' type='nominal' />
+            <column caption='Sales Channel' datatype='string' name='[sales_channel]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0360096835674117]' derivation='User' name='[usr:Calculation_0360096835674117:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:Calculation_0360096836530182:nk]'>
+            <groupfilter function='member' level='[none:Calculation_0360096836530182:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:sales_channel:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:sales_channel:nk]' />
+              <groupfilter function='member' level='[none:sales_channel:nk]' member='&quot;{no data}&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:Calculation_0360096836530182:nk]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:sales_channel:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[usr:Calculation_0360096835674117:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:booking_amount:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:booking_amount:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[:Measure Names]' />
+              <text column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:booking_amount:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='2.022099494934082' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1b0h9n41ht4csy1752xx31b77kwi].[usr:Calculation_0360096835674117:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[:Measure Names]' />
+              <text column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[usr:Calculation_0360096835674117:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.5052486658096313' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:booking_amount:qk] + [federated.1b0h9n41ht4csy1752xx31b77kwi].[usr:Calculation_0360096835674117:qk])</rows>
+        <cols>[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:sales_channel:nk]</cols>
+      </table>
+      <simple-id uuid='{D20414BB-E59A-4793-BBF3-FA43BC9CF5BF}' />
+    </worksheet>
+    <worksheet name='Stay vs Amount'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Indigo_Data_Set' name='federated.1b0h9n41ht4csy1752xx31b77kwi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b0h9n41ht4csy1752xx31b77kwi'>
+            <column caption='Is Complete' datatype='boolean' name='[Calculation_0360096836530182]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[booking_complete] = 1' />
+            </column>
+            <column caption='Booking Amount' datatype='integer' name='[booking_amount]' role='measure' type='quantitative' />
+            <column caption='Booking Complete' datatype='integer' name='[booking_complete]' role='measure' type='quantitative' />
+            <column caption='Length Of Stay' datatype='integer' name='[length_of_stay]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0360096836530182]' derivation='None' name='[none:Calculation_0360096836530182:nk]' pivot='key' type='nominal' />
+            <column-instance column='[booking_amount]' derivation='Sum' name='[sum:booking_amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[length_of_stay]' derivation='Sum' name='[sum:length_of_stay:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:Calculation_0360096836530182:nk]'>
+            <groupfilter function='member' level='[none:Calculation_0360096836530182:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:Calculation_0360096836530182:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:length_of_stay:qk]' value='' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:length_of_stay:qk]' value='n#,##0;-#,##0' />
+            <format attr='text-format' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:booking_amount:qk]' value='c&quot;₹ &quot;#,##0,,M;&quot;₹ &quot;-#,##0,,M' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2.3314917087554932' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:booking_amount:qk]</rows>
+        <cols>[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:length_of_stay:qk]</cols>
+      </table>
+      <simple-id uuid='{4700D330-17FA-4CBB-ABA1-9864A1B603C3}' />
+    </worksheet>
+    <worksheet name='Top 10 Route by Revenue'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Indigo_Data_Set' name='federated.1b0h9n41ht4csy1752xx31b77kwi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b0h9n41ht4csy1752xx31b77kwi'>
+            <column caption='Total Revenue (Completed)' datatype='integer' name='[Calculation_0360096825237505]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [booking_complete]= 1 THEN [booking_amount] ELSE 0 END' />
+            </column>
+            <column caption='Seat class' datatype='string' name='[Seat_class]' role='dimension' type='nominal' />
+            <column caption='Booking Amount' datatype='integer' name='[booking_amount]' role='measure' type='quantitative' />
+            <column caption='Booking Complete' datatype='integer' name='[booking_complete]' role='measure' type='quantitative' />
+            <column caption='Flight Day' datatype='string' name='[flight_day]' role='dimension' type='nominal' />
+            <column-instance column='[route]' derivation='None' name='[none:route:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_addon]' derivation='None' name='[none:total_addon:ok]' pivot='key' type='ordinal' />
+            <column caption='Route' datatype='string' name='[route]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0360096825237505]' derivation='Sum' name='[sum:Calculation_0360096825237505:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Addon' datatype='integer' name='[total_addon]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Flight Day)]'>
+            <groupfilter function='level-members' level='[flight_day]' user:ui-action-filter='[Action3_0C85E22084474E918CB09CCDB5E005FF]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Seat class,Total Addon)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action6_9E39A223B1904ED8B8852708AC0D1E56]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Seat_class]' />
+              <groupfilter function='level-members' level='[none:total_addon:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Total Addon)]'>
+            <groupfilter function='level-members' level='[none:total_addon:ok]' user:ui-action-filter='[Action8_B6B5CBBE32F447D8B09DD5BFAEFD7E61]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:route:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end'>
+              <groupfilter direction='DESC' expression='SUM([Calculation_0360096825237505])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:route:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:Calculation_0360096825237505:qk]' included-values='all' />
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:route:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:Calculation_0360096825237505:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:route:nk]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:Calculation_0360096825237505:qk]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Seat class,Total Addon)]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Flight Day)]</column>
+            <column>[federated.1b0h9n41ht4csy1752xx31b77kwi].[Action (Total Addon)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:Calculation_0360096825237505:qk]' value='c&quot;₹ &quot;#,##0,,M;&quot;₹ &quot;-#,##0,,M' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:Calculation_0360096825237505:qk]' value='Total Revenue (Completed)'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontsize='10'>Total Revenue (Completed)</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:Calculation_0360096825237505:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:route:nk]</rows>
+        <cols>[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:Calculation_0360096825237505:qk]</cols>
+      </table>
+      <simple-id uuid='{4C396901-011D-41E8-BC10-2251586B41F2}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Tableau Bold'>Indigo Airlines - Customer Booking Analysis | May 2026</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Indigo_Data_Set' name='federated.1b0h9n41ht4csy1752xx31b77kwi' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1b0h9n41ht4csy1752xx31b77kwi'>
+        <column caption='Total Revenue (Completed)' datatype='integer' name='[Calculation_0360096825237505]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='IF [booking_complete]= 1 THEN [booking_amount] ELSE 0 END' />
+        </column>
+        <column caption='Seat class' datatype='string' name='[Seat_class]' role='dimension' type='nominal' />
+        <column-instance column='[Calculation_0360096825237505]' derivation='Avg' name='[avg:Calculation_0360096825237505:qk]' pivot='key' type='quantitative' />
+        <column caption='Flight Day' datatype='string' name='[flight_day]' role='dimension' type='nominal' />
+        <column-instance column='[Seat_class]' derivation='None' name='[none:Seat_class:nk]' pivot='key' type='nominal' />
+        <column-instance column='[flight_day]' derivation='None' name='[none:flight_day:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Calculation_0360096825237505]' derivation='Sum' name='[sum:Calculation_0360096825237505:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='5' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='5339' id='7' type-v2='title' w='98828' x='586' y='1042'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#0000ff' />
+              </zone-style>
+            </zone>
+            <zone h='92577' id='6' type-v2='layout-basic' w='98828' x='586' y='6381' />
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='22396' id='8' name='KPI Sheet' w='30893' x='952' y='6771'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#dfedeb' />
+          </zone-style>
+        </zone>
+        <zone h='28385' id='9' name='Revenue by Seat Class' w='44876' x='952' y='30599'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#e6ecf0' />
+          </zone-style>
+        </zone>
+        <zone h='37760' id='13' name='Booking by Flight days' w='43704' x='31259' y='59896'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#e6ecf0' />
+          </zone-style>
+        </zone>
+        <zone h='37891' id='14' name='Top 10 Route by Revenue' w='29649' x='952' y='59896'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#e6ecf0' />
+          </zone-style>
+        </zone>
+        <zone h='37630' id='15' name='Add-on impact' w='23426' x='75476' y='59896'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#e6ecf0' />
+          </zone-style>
+        </zone>
+        <zone h='28125' id='17' name='Add-on Heatmap' w='52635' x='46413' y='30729'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#e6ecf0' />
+          </zone-style>
+        </zone>
+        <zone h='22656' id='18' name='Revenue by Sales Channel' w='27892' x='32504' y='6771'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#e6ecf0' />
+          </zone-style>
+        </zone>
+        <zone h='8724' id='19' name='Revenue by Sales Channel' pane-specification-id='0' param='[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:sales_channel:nk]' type-v2='color' w='12592' x='76428' y='6771'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#efebe8' />
+          </zone-style>
+        </zone>
+        <zone h='23047' id='20' mode='checklist' name='Booking by Flight days' param='[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:flight_day:nk]' type-v2='filter' values='database' w='9517' x='89531' y='6771'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#efebe8' />
+          </zone-style>
+        </zone>
+        <zone h='13021' id='21' name='Revenue by Seat Class' param='[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:Seat_class:nk]' type-v2='filter' values='database' w='12592' x='76428' y='16536'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#efebe8' />
+          </zone-style>
+        </zone>
+        <zone h='10156' id='22' name='Add-on Heatmap' param='[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:Calculation_0360096825237505:qk]' type-v2='filter' values='database' w='14714' x='61054' y='6771'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#ebebeb' />
+          </zone-style>
+        </zone>
+        <zone h='11458' id='23' name='Top 10 Route by Revenue' param='[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:Calculation_0360096825237505:qk]' type-v2='filter' values='database' w='14714' x='61054' y='18099'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#efebe8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1' fontcolor='#ffffff' fontname='Tableau Bold'>Indigo Airlines - Customer Booking Analysis | May 2026</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='2100' minheight='2100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='24' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone h='5339' id='7' type-v2='title' w='98828' x='586' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#0000ff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='170' h='22396' id='8' is-fixed='true' name='KPI Sheet' w='30893' x='952' y='6771'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#dfedeb' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='172' h='22656' id='18' is-fixed='true' name='Revenue by Sales Channel' w='27892' x='32504' y='6771'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6ecf0' />
+                  </zone-style>
+                </zone>
+                <zone h='8724' id='19' name='Revenue by Sales Channel' pane-specification-id='0' param='[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:sales_channel:nk]' type-v2='color' w='12592' x='76428' y='6771'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#efebe8' />
+                  </zone-style>
+                </zone>
+                <zone h='13021' id='21' mode='checkdropdown' name='Revenue by Seat Class' param='[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:Seat_class:nk]' type-v2='filter' values='database' w='12592' x='76428' y='16536'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#efebe8' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='216' h='28385' id='9' is-fixed='true' name='Revenue by Seat Class' w='44876' x='952' y='30599'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6ecf0' />
+                  </zone-style>
+                </zone>
+                <zone h='10156' id='22' name='Add-on Heatmap' param='[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:Calculation_0360096825237505:qk]' type-v2='filter' values='database' w='14714' x='61054' y='6771'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ebebeb' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='214' h='28125' id='17' is-fixed='true' name='Add-on Heatmap' w='52635' x='46413' y='30729'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6ecf0' />
+                  </zone-style>
+                </zone>
+                <zone h='11458' id='23' name='Top 10 Route by Revenue' param='[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:Calculation_0360096825237505:qk]' type-v2='filter' values='database' w='14714' x='61054' y='18099'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#efebe8' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37891' id='14' is-fixed='true' name='Top 10 Route by Revenue' w='29649' x='952' y='59896'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6ecf0' />
+                  </zone-style>
+                </zone>
+                <zone h='23047' id='20' mode='checkdropdown' name='Booking by Flight days' param='[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:flight_day:nk]' type-v2='filter' values='database' w='9517' x='89531' y='6771'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#efebe8' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37760' id='13' is-fixed='true' name='Booking by Flight days' w='43704' x='31259' y='59896'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6ecf0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37630' id='15' is-fixed='true' name='Add-on impact' w='23426' x='75476' y='59896'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6ecf0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{3BDBBF27-524D-4880-80F4-9F2783CEE6B3}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000'>Indigo Airlines - Booking &amp; Revenue Analysis </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='story-description'>
+          <format attr='font-family' value='Tableau Bold' />
+          <format attr='font-size' value='11' />
+          <format attr='color' value='#000000' />
+        </style-rule>
+        <style-rule element='story-point-caption'>
+          <format attr='width' value='1157' />
+          <format attr='font-size' value='16' />
+          <format attr='font-weight' value='bold' />
+          <format attr='font-family' value='Tableau Bold' />
+          <format attr='background-color' value='#0055ff' />
+        </style-rule>
+      </style>
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='1' param='vert' removable='false' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='4297' id='3' type-v2='title' w='98828' x='586' y='1042' />
+            <zone fixed-size='109' h='14193' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98828' x='586' y='5339' />
+            <zone h='79426' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98828' x='586' y='19532'>
+              <flipboard active-id='4' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='&quot;Indigo Airlines processed 50,000 booking attempts - but only 14.9% were completed. This analysis investigates why, and identifies where revenue can be grown.&quot;' captured-sheet='KPI Sheet' id='1' />
+                  <story-point caption='“Internet (Desktop) generates most revenue, while Mobile has low volume despite similar booking value. Mobile is a major growth opportunity.”' captured-sheet='Revenue by Sales Channel' id='2' />
+                  <story-point caption='“Add-ons are the strongest revenue lever. Customers selecting 3 add-ons pay much more than customers selecting none.”' captured-sheet='Add-on impact' id='3' />
+                  <story-point caption='“Three actions can improve revenue: fix completion rate, improve mobile conversion, and promote add-on bundles.”' captured-sheet='' id='4' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone flipboard-zone-id='5' h='71615' id='7' story-point-id='4' type-v2='text' w='83968' x='12958' y='21745'>
+          <formatted-text>
+            <run fontalignment='0' fontsize='24'> 1. Fix the Completion Rate</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontsize='24'>   ~ Only 14.9% of bookings complete. Investigate checkout </run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontsize='24'>    drop-off and add abandoned-booking email reminders.</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontsize='24'>    Even +5% improvement.</run>
+            <run fontalignment='0'>Æ&#10;&#10;</run>
+            <run fontalignment='0' fontsize='24'>  2. Launch Add-on Bundle Packages</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontsize='24'>   ~  3 add-ons , Create a Smart Traveller Bundle at a 10% discount </run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontsize='24'>    to increase attachment from 0-add-on customers.</run>
+            <run fontalignment='0'>Æ&#10;&#10;</run>
+            <run fontalignment='0' fontsize='24'>3. Fix Mobile Conversion</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontsize='24'> ~  Mobile customers pay the same as Internet customers </run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontsize='24'>    but complete far fewer bookings. Fix the mobile </run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontsize='24'>    checkout flow to capture this lost revenue.</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <simple-id uuid='{37F28D03-D38E-4901-B651-434749712249}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='KPI Sheet'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{DE599F8A-A3BC-4AC2-993B-0A66F71E9828}' />
+    </window>
+    <window class='worksheet' name='Revenue by Seat Class'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1b0h9n41ht4csy1752xx31b77kwi].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{87C70398-38BF-4EB7-A72A-75C2AED2C667}' />
+    </window>
+    <window class='worksheet' name='Revenue by Sales Channel'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1b0h9n41ht4csy1752xx31b77kwi].[none:sales_channel:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2E042D24-3DBB-423B-A9C7-80B77D866204}' />
+    </window>
+    <window class='worksheet' name='Booking by Flight days'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1b0h9n41ht4csy1752xx31b77kwi].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{AFA6C755-CE0E-46BB-AF92-30AB308F907D}' />
+    </window>
+    <window class='worksheet' name='Add-on impact'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1b0h9n41ht4csy1752xx31b77kwi].[sum:total_addon:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{17806417-BA94-4168-B9DC-A79098B4732F}' />
+    </window>
+    <window class='worksheet' name='Puchase lead by seat class'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{1CDE8FA3-84FA-455D-82A5-59F00E2533A1}' />
+    </window>
+    <window class='worksheet' name='Stay vs Amount'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{41107DBE-5A47-475E-86FE-6E82E4A16927}' />
+    </window>
+    <window class='worksheet' name='Sales Channel Behaviour'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1b0h9n41ht4csy1752xx31b77kwi].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{4D984CBE-D138-4DAC-8AF1-E2E065EB651F}' />
+    </window>
+    <window class='worksheet' name='Top 10 Route by Revenue'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DC01892B-3BB4-4026-AB1F-834ECAAD8140}' />
+    </window>
+    <window class='worksheet' name='Add-on Heatmap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1b0h9n41ht4csy1752xx31b77kwi].[avg:Calculation_0360096825237505:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{738B4226-D6E7-4757-8AC4-079A76D023DC}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Add-on Heatmap'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Add-on impact'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Booking by Flight days'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI Sheet'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Revenue by Sales Channel'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Revenue by Seat Class'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 10 Route by Revenue'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <device-preview visible='true' />
+      <simple-id uuid='{F2E0EAB1-FB9D-445D-9D0E-15E9F4DF2B19}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{A703215C-E480-436B-9437-429132B7F471}' />
+    </window>
+  </windows>
+</workbook>
